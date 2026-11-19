@@ -1,0 +1,9 @@
+# ILMORA Bento Edition — tekshiruv hisoboti
+
+- `npm run check`: JavaScript sintaksisi, 40 dars, 1000 noyob savol matni va ID, javob indekslari va variantlar, 16 AI vositasi tekshirildi. 1000 savol 200 tushunchaning besh turdagi mashq variantidan iborat; bu 1000 mustaqil nazariy tushuncha emas.
+- `python tests/browser_test.py`: Chromium offline DOM sinovi: bosh sahifa, darslar, XP, test, izoh, qisqa konspekt, fokus, kartochka, Word eksport, test yaratish, mahalliy AI yordamchi, iqtibos, imlo va uslub tahlili, matn konstruktori, mahalliy konspekt saqlash, nutq taymeri, bilim xaritasi, oraliq test, xatolarni takrorlash, dark mode, mobil joylashuv. Haqiqiy server sinovi emas.
+- PDF materiallari: 6 ta taqdimotning matnli bo‘limlari va ko‘rinadigan misollardan 20 kichik dars qayta ishlandi; manba raqami va sahifa oralig‘i ko‘rsatiladi. Barcha 350 sahifa so‘zma-so‘z ko‘chirilmagan. Asl PDF fayllar tarqatilmaydi. O‘qituvchi ilmiy mazmun va savollarni tekshirishi kerak.
+- Eski 20 ta darsning ID raqamlari saqlangan. Yangi ID 21–40. Mavjud bazada bento-upgrade.sql ishlatish zarur. Yangi o‘rnatishda schema.sql va features.sql ishlatiladi.
+- AI: manbaga tayangan qisqa kontekst qidiruvi server kodida; haqiqiy Gemini API chaqiruvi tekshirilmagan. Mahalliy fallback AI emas. Imlo/ uslub cheklangan qoidaviy tekshiruv. Nutq treneri audio baholamaydi. Konspekt/xatolar qurilmada saqlanadi.
+- Live: eski klassik va imtihon rejimlari uchun alohida dizayn. Haqiqiy serverda 30–50 ishtirokchi yuklama sinovi hali bajarilmagan. Qolgan multiplayer rejimlar, push bildirishnomalar, QR sertifikat va to‘liq rich text muharriri yakunlanmagan.
+- HTML demo uchun tarmoqsiz ichki skript va CSS. `file://` navigatsiyasi alohida muhitga bog‘liq. Netlify deploy, Supabase, Google OAuth va Gemini haqiqiy hisoblarda sinovdan o‘tkazilishi kerak.

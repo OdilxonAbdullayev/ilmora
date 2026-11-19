@@ -1,0 +1,1 @@
+{"name":"ilmora","version":"1.0.0-alpha.3","private":true,"type":"module","scripts":{"check":"node --check public/app.js && node --check public/content.js && node --check netlify/functions/ai.mjs && node tests/content.test.js"}}
